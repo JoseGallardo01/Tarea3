@@ -159,7 +159,24 @@ void draw() {
   textSize(18);
   text("PELIGRO",563,250);
   }
+// Medición instantánea:
+  fill(255);
+  rect(345,60,200,40);
+  fill(0);
+  textSize(14);
+  text("Temperatura (°C) =",350,90);
+  fill(0);
+  textSize(14);
+  text((p0_x_3-160)*0.8,485,90);
   
+  fill(255);
+  rect(340,310,215,40);
+  fill(0);
+  textSize(14);
+  text("Presión (hPa) =",360,340);
+  fill(0);
+  textSize(14);
+  text((p1_x_3+6920.29)*0.137,470,340);
 }
 boolean mouseEnSensor1(){
   return( (pmouseX > 200 && pmouseX <400) && (pmouseY > 220 && pmouseY <270) );
